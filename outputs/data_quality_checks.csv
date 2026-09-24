@@ -1,0 +1,9 @@
+check,passed,detail
+row_count_positive,True,"rows=12,000"
+customer_id_unique,True,duplicates=0
+no_missing_values,True,missing=0
+dti_in_range,True,"expected [0,1]"
+utilization_in_range,True,"expected [0,1]"
+lgd_in_range,True,"expected [0,1]"
+ead_positive,True,expected >0
+binary_target,True,"expected {0,1}"

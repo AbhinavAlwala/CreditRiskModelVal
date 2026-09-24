@@ -1,0 +1,37 @@
+
+--- Query 1 ---
+ observation_year  borrowers  total_ead  default_rate_pct
+             2022       2668 22217584.0             11.28
+             2023       2999 25511853.0             10.40
+             2024       3265 27298672.0             10.93
+             2025       3068 25776352.0             12.81
+
+--- Query 2 ---
+dti_band  borrowers  total_ead  default_rate_pct  realized_loss
+    <20%       3332 28183720.0              6.99       817396.0
+  20-40%       5421 46060234.0             10.24      2141612.0
+  40-60%       2660 21631556.0             16.54      1728190.0
+    60%+        587  4928951.0             23.00       624011.0
+
+--- Query 3 ---
+ borrowers  total_ead  default_rate_pct  avg_income
+       167  2196690.0             35.33     70746.0
+
+--- Query 4 ---
+income_band   utilization_band  borrowers  total_ead  default_rate_pct
+    40k-80k   High utilization        519  5718066.0             27.17
+    40k-80k    Low utilization       2320 11392517.0              7.16
+    40k-80k Medium utilization       3586 27658306.0             14.64
+       80k+   High utilization        341  6458196.0             18.18
+       80k+    Low utilization       1379 12453933.0              4.06
+       80k+ Medium utilization       2155 30483678.0              8.35
+       <40k   High utilization        160   932751.0             23.75
+       <40k    Low utilization        579  1584330.0              6.04
+       <40k Medium utilization        961  4122684.0             16.65
+
+--- Query 5 ---
+ observation_year  avg_dti  avg_utilization  default_rate_pct  realized_loss
+             2022    0.310            0.400             11.28      1118262.0
+             2023    0.309            0.396             10.40      1256779.0
+             2024    0.307            0.399             10.93      1428529.0
+             2025    0.308            0.395             12.81      1507639.0

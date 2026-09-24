@@ -1,0 +1,116 @@
+{
+  "portfolio_rows": 12000,
+  "development_rows": 8932,
+  "oot_validation_rows": 3068,
+  "development_default_rate": 0.10859829825347067,
+  "oot_default_rate": 0.12809647979139505,
+  "total_oot_ead": 25776351.6,
+  "realized_oot_loss": 1507639.332651,
+  "primary": {
+    "roc_auc": 0.7633930227580794,
+    "ks_statistic": 0.37824831751920285,
+    "brier_score": 0.09796080207657945,
+    "mean_predicted_pd": 0.10854776866479562,
+    "observed_default_rate": 0.12809647979139505,
+    "score_psi_train_vs_test": 0.0033466560477962352
+  },
+  "primary_confidence_intervals": {
+    "roc_auc": {
+      "metric": "roc_auc",
+      "estimate": 0.7633930227580794,
+      "ci_lower": 0.7388363830683539,
+      "ci_upper": 0.7886273974430867,
+      "bootstrap_replicates": 500
+    },
+    "ks_statistic": {
+      "metric": "ks_statistic",
+      "estimate": 0.37824831751920285,
+      "ci_lower": 0.3465357551536235,
+      "ci_upper": 0.4341461863320448,
+      "bootstrap_replicates": 500
+    },
+    "brier_score": {
+      "metric": "brier_score",
+      "estimate": 0.09796080207657945,
+      "ci_lower": 0.09022575420356896,
+      "ci_upper": 0.10705038972856011,
+      "bootstrap_replicates": 500
+    }
+  },
+  "challenger": {
+    "roc_auc": 0.6973893605383938,
+    "ks_statistic": 0.2873082685310694,
+    "brier_score": 0.10395917728611892,
+    "mean_predicted_pd": 0.10927719466695288,
+    "observed_default_rate": 0.12809647979139505
+  },
+  "auc_difference_primary_minus_challenger": {
+    "auc_difference": 0.06600366221968557,
+    "ci_lower": 0.04484931086342031,
+    "ci_upper": 0.08592045824302302,
+    "bootstrap_replicates": 500
+  },
+  "stress": [
+    {
+      "scenario": "baseline",
+      "mean_pd": 0.10854776866479562,
+      "mean_lgd": 0.4148465775749674,
+      "expected_loss": 1281831.8500123986,
+      "expected_loss_rate_on_ead": 0.049728986859893645,
+      "relative_change_vs_baseline": 0.0,
+      "loss_change_vs_baseline": 0.0
+    },
+    {
+      "scenario": "mild",
+      "mean_pd": 0.13396624962436962,
+      "mean_lgd": 0.46484657757496745,
+      "expected_loss": 1767940.992139297,
+      "expected_loss_rate_on_ead": 0.0685877124728271,
+      "relative_change_vs_baseline": 0.23416861785587084,
+      "loss_change_vs_baseline": 0.37923003873105254
+    },
+    {
+      "scenario": "severe",
+      "mean_pd": 0.20289828969984483,
+      "mean_lgd": 0.5148465775749674,
+      "expected_loss": 2944529.1527174693,
+      "expected_loss_rate_on_ead": 0.114233744108203,
+      "relative_change_vs_baseline": 0.8692073747403442,
+      "loss_change_vs_baseline": 1.2971259082764939
+    }
+  ],
+  "annual_backtest": [
+    {
+      "validation_year": 2023,
+      "development_rows": 2668,
+      "validation_rows": 2999,
+      "roc_auc": 0.7281676734133005,
+      "ks_statistic": 0.33463828690847675,
+      "brier_score": 0.08581583539167148,
+      "mean_predicted_pd": 0.11056861901800671,
+      "observed_default_rate": 0.10403467822607536
+    },
+    {
+      "validation_year": 2024,
+      "development_rows": 5667,
+      "validation_rows": 3265,
+      "roc_auc": 0.7410466249773637,
+      "ks_statistic": 0.3680997846181113,
+      "brier_score": 0.0892022472775522,
+      "mean_predicted_pd": 0.10757503842499412,
+      "observed_default_rate": 0.10934150076569678
+    },
+    {
+      "validation_year": 2025,
+      "development_rows": 8932,
+      "validation_rows": 3068,
+      "roc_auc": 0.7633930227580794,
+      "ks_statistic": 0.37824831751920285,
+      "brier_score": 0.09796080207657945,
+      "mean_predicted_pd": 0.10854776866479562,
+      "observed_default_rate": 0.12809647979139505
+    }
+  ],
+  "data_quality_checks_passed": 8,
+  "data_quality_checks_total": 8
+}
